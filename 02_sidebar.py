@@ -32,3 +32,5 @@ def create_map():
 def Page():
     m = create_map()
     return m.to_solara()
+
+app = solara.AppLayout(Page())
