@@ -6,7 +6,7 @@ emoji: 🌍
 colorFrom: blue
 colorTo: green
 sdk: docker
-app_file: app.py
+app_file: 02_sidebar.py
 pinned: false
 
 # pinned: false
