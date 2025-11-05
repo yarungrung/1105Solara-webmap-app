@@ -19,5 +19,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 5. 複製您所有的 App 程式碼
 COPY . .
 
-# 6. 告訴 HF 如何執行 (使用 7860 port)
-CMD ["solara", "run", "app.py", "--host", "0.0.0.0", "--port", "7860"]
+# 6. 暴露 Hugging Face 的預設埠
+EXPOSE 7860
+ENV PORT=7860
+
+# 7. 啟動 Solara App
+# 將 02_sidebar.py 改成你的主檔案名稱
+CMD ["solara", "run", "02_sidebar.py", "--host", "0.0.0.0", "--port", "7860"]
