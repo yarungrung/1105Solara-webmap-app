@@ -6,8 +6,11 @@ emoji: 🌍
 colorFrom: blue
 colorTo: green
 sdk: docker
+app_file: app.py
 pinned: false
-app_port: 7860
+
+# pinned: false
+# app_port: 7860
 ---
 
 # 以下是您 README 的原有內容，例如：
